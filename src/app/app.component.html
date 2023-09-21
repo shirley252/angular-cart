@@ -1,11 +1,32 @@
-<app-top-bar></app-top-bar>
+<header>
+  <img
+    class="logo"
+    src="assets/img/logotipo2.png"
+    alt="Logotipo"
+    id="logotipo"
+  />
+  <h1>Estética Diany</h1>
+</header>
+<div class="body">
+  <nav class="navbar">
+    <ul>
+      <li><a routerLink="/">Menú</a></li>
+      <li><a routerLink="/agenda">Agenda</a></li>
+      <li><a routerLink="/producto">Productos</a></li>
+      <li><a routerLink="/presupuestos">Presupuestos</a></li>
+      <li><a routerLink="/contacto">Contactos</a></li>
+    </ul>
+  </nav>
 
-<div class="container">
-  <router-outlet></router-outlet>
+  <div appBorder class="content"><router-outlet></router-outlet></div>
 </div>
-
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
--->
+<footer class="footer">
+  <div>
+    <p>Siguenos</p>
+    <img class="imagen" src="assets/img/logo-facebook.png" alt="facebook" />
+    <img class="imagen" src="assets/img/instagram.png" alt="Instragram" />
+    <img class="imagen" src="assets/img/twitter.png" alt="X" />
+  </div>
+  <p>Aviso legal</p>
+  <p>Política de privacidad</p>
+</footer>

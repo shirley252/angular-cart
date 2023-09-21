@@ -1,0 +1,43 @@
+<!--<div class="formulario">
+  <form action="#" target="" method="get" name="formDatosPersonales">
+    <label for="nombre">Nombre: </label>
+    <input
+      type="text"
+      name="nombre"
+      id="nombre"
+      placeholder="Escribe tu nombre"
+    />
+
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" placeholder="email" required />
+
+    <label for="telefono">Teléfono: </label>
+    <input type="text" name="telefono" id="telefono" placeholder="" />
+
+    <label for="mensaje">Solicite información</label>
+    <textarea
+      name="mensaje"
+      for="mensaje"
+      placeholder="describe brevemente en menos de 300 carácteres"
+      maxlength="300"
+    ></textarea>
+
+    <label for="mensaje">Polítitca de privacidad</label>
+    <input type="checkbox" name="privacidad" value="Polítitca de privacidad" />
+  </form>
+</div> -->
+<div class="contenedor">
+  <form [formGroup]="presupuestoForm">
+    <label for="name"> Nombre: </label>
+    <input type="text" name="name" formControlName="name" />
+
+    <label for="surname"> teléfono: </label>
+    <input type="tel" name="phone" formControlName="phone" />
+
+    <label for="surname">Email: </label>
+    <input type="email" name="email" formControlName="email" />
+
+    <button class="button" type="submit">Enviar</button>
+  </form>
+  {{ presupuestoForm.value | json }}
+</div>

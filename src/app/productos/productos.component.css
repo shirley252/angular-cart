@@ -1,0 +1,20 @@
+.columna {
+  float: left;
+  width: 33%;
+  padding-right: 5px;
+}
+
+.fila::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#product {
+  display: flex;
+  justify-content: center;
+  margin: 225px;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+}

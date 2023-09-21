@@ -1,0 +1,63 @@
+<div class="citas"><h1>Citas</h1></div>
+<h1>Datos Personales</h1>
+<!--<form>
+  <ul class="datosPersonales">
+    <li>
+      <label for="nombre">Nombre: </label>
+      <input type="text" name="nombre" />
+    </li>
+    <li>
+      <label for="apellidos">Apellidos: </label>
+      <input type="text" name="apellidos" />
+    </li>
+    <li>
+      <label for="email">Email: </label>
+      <input type="email" name="email" />
+    </li>
+    <li>
+      <label for="telefono">Teléfono: </label>
+      <input type="tel" name="telefono" />
+    </li>
+  </ul>
+
+  <h3 class="product1">Productos</h3>
+
+  <div class="radio">
+    <ul class="radio1">
+      <li><input type="radio" />Uñas</li>
+      <li><input type="radio" />Cejas</li>
+      <li><input type="radio" />Depilación láser</li>
+    </ul>
+  </div>
+  <div class="fecha">
+    <input
+      type="datetime-local"
+      value="2023-12-31T11:00"
+      min="2023-09-18T11:00"
+      max="2023-12-31T11:00"
+      step="3600"
+    />
+  </div>
+
+  <div class="submit">
+    <input type="submit" name="enviar" value="Enviar" />
+  </div>
+</form> -->
+<div class="contenedor">
+  <form [formGroup]="agendaForm">
+    <label for="name"> Nombre: </label>
+    <input type="text" name="name" formControlName="name" />
+
+    <label for="surname"> Apellidos: </label>
+    <input type="text" name="surname" formControlName="surname" />
+
+    <label for="surname"> teléfono: </label>
+    <input type="tel" name="phone" formControlName="phone" />
+
+    <label for="surname">Email: </label>
+    <input type="email" name="email" formControlName="email" />
+
+    <button class="button" type="submit">Enviar</button>
+  </form>
+  {{ agendaForm.value | json }}
+</div>

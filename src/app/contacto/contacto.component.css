@@ -1,0 +1,12 @@
+.mapa {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 350px;
+  height: 350px;
+}
+.telefono {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}

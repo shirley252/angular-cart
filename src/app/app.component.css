@@ -1,9 +1,65 @@
-p {
-  font-family: Lato;
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/
+.body {
+  display: flex;
+  flex: 1;
+}
+.navbar {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+}
+.imagen {
+  display: flex;
+  margin: auto;
+  width: 55px;
+  height: 55px;
+}
+.footer {
+  margin: 20px;
+  text-align: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+section {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-size: 40pt;
+  text-align: center;
+  color: rgb(138, 115, 160);
+}
+li {
+  line-height: 6.5;
+  list-style-type: none;
+  font-size: 25px;
+}
+ul > li a:hover {
+  background: #2e779a;
+  background: -moz-linear-gradient(#2e779a 0%, #2e779a 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #2e779a),
+    color-stop(100%, #2e779a)
+  );
+  background: -webkit-linear-gradient(#2e779a 0%, #2e779a 100%);
+  background: linear-gradient(#2e779a 0%, #2e779a 100%);
+  color: white;
+}
+p {
+  font-size: 18pt;
+  font-family: "Courier New", Courier, monospace;
+}

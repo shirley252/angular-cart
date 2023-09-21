@@ -1,0 +1,29 @@
+.citas {
+  text-align: center;
+}
+
+/*.datosPersonales {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 1px;
+}
+.radio1 {
+  list-style-type: none;
+}
+.submit {
+  text-align: center;
+}
+.fecha {
+  text-align: center;
+}*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
